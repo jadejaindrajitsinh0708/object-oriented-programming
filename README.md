@@ -36,10 +36,11 @@ Object-Oriented Programming (OOP)
 
 📂 Project Structure
 Employee-Management-System/
+
 │
+├── README.md
 ├── main.py
-├── output.png
-└── README.md
+└── output.png 
 
  🖼️  Output Screenshot
  ![Employee Management System Output](output.png)
