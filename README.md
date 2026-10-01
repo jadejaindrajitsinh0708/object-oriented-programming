@@ -34,13 +34,15 @@ Python 3
 
 Object-Oriented Programming (OOP)
 
-📂 Project Structure
-Employee-Management-System/
+## 📂 Project Structure
 
+```text
+Employee-Management-System/
 │
 ├── README.md
 ├── main.py
-└── output.png 
+└── output.png
+```
 
  🖼️  Output Screenshot
  ![Employee Management System Output](output.png)
