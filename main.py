@@ -1,4 +1,4 @@
-print("--- Python OPP Project : Employee Manegment System ")
+print("--- Python OOP Project : Employee Manegment System ")
 
 
 
