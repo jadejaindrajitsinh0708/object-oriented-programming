@@ -30,7 +30,9 @@ Menu-driven programming
 
 🛠️ Technologies Used
 
-Python 3
+Python 3 – Main programming language
+Git – Version control system
+GitHub – Repository and code hosting platform
 
 Object-Oriented Programming (OOP)
 
