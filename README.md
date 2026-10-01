@@ -1,40 +1,30 @@
-🐍 Python OOP — Employee Management System
+# 🐍 Python OOP — Employee Management System
 
 A simple Employee Management System built with Python to demonstrate fundamental Object-Oriented Programming (OOP) concepts.
 
-📌 Project Description
+## 📌 Project Description
 
 This is a menu-driven Employee Management System created using Python.
 
 The project demonstrates important OOP concepts such as:
 
-Classes and Objects
+* Classes and Objects
+* Constructors
+* Encapsulation
+* Inheritance
+* Method Overriding
+* Private Attributes
+* Getters and Setters
+* `super()`
+* `issubclass()`
+* Menu-driven programming
 
-Constructors
+## 🛠️ Technologies Used
 
-Encapsulation
-
-Inheritance
-
-Method Overriding
-
-Private Attributes
-
-Getters and Setters
-
-super()
-
-issubclass()
-
-Menu-driven programming
-
-🛠️ Technologies Used
-
-Python 3 – Main programming language
-Git – Version control system
-GitHub – Repository and code hosting platform
-
-Object-Oriented Programming (OOP)
+* Python 3 – Main programming language
+* Git – Version control system
+* GitHub – Repository and code hosting platform
+* Object-Oriented Programming (OOP)
 
 ## 📂 Project Structure
 
@@ -46,238 +36,255 @@ Employee-Management-System/
 └── output.png
 ```
 
- 🖼️  Output Screenshot
+## 🖼️ Output Screenshot
  ![Employee Management System Output](output.png)
 
+## 👨‍💻 Classes
 
-👨‍💻 Classes
-1. Employee
+### 1. Employee
 
 Employee is the base class of the project.
 
 It contains:
 
-Employee ID
-
-Name
-
-Age
-
-Salary
+* Employee ID
+* Name
+* Age
+* Salary
 
 Private attributes:
 
+```python
 self.__Employee_id
 self.__salary
-
+```
 
 The class provides getter and setter methods for the private attributes.
 
-Methods:
+### Methods:
 
-display()
+* `display()`
+* `set_id()`
+* `set_salary()`
+* `get_id()`
+* `get_salary()`
 
-set_id()
-
-set_salary()
-
-get_id()
-
-get_salary()
-
-2. Manager
+### 2. Manager
 
 Manager inherits from the Employee class.
 
+```python
 class Manager(Employee):
-
+```
 
 Additional attribute:
 
-Department
+* Department
 
-The display() method is overridden to display manager details.
+The `display()` method is overridden to display manager details.
 
-3. Development
+### 3. Development
 
-The devlopment class inherits from Employee.
+The `devlopment` class inherits from the Employee class.
 
+```python
 class devlopment(Employee):
-
+```
 
 Additional attribute:
 
-Programming Language
+* Programming Language
 
-Note: The original class name in the project is devlopment. A better Python naming convention would be Development.
+> **Note:** The original class name in the project is `devlopment`. A better Python naming convention would be `Development`.
 
-🧠 OOP Concepts Used
-Encapsulation
+## 🧠 OOP Concepts Used
+
+### Encapsulation
 
 Employee ID and salary are stored as private attributes:
 
+```python
 self.__Employee_id
 self.__salary
+```
 
+Getter and setter methods are used to access and modify these private attributes.
 
-Getter and setter methods are used to access and modify these attributes.
+Example:
 
+```python
 def set_id(self, Employee_id):
     self.__Employee_id = Employee_id
 
 def get_id(self):
     return self.__Employee_id
+```
 
-Inheritance
+### Inheritance
 
-The Manager and devlopment classes inherit from the Employee class.
+The `Manager` and `devlopment` classes inherit from the `Employee` class.
 
+```python
 class Manager(Employee):
+```
 
+```python
 class devlopment(Employee):
+```
 
-Method Overriding
+### Method Overriding
 
-The child classes override the display() method.
+The child classes override the `display()` method.
 
 Example:
 
+```python
 def display(self):
     super().display()
+```
 
-Constructor
+### Constructor
 
-The __init__() method is used to initialize object attributes.
+The `__init__()` method is used to initialize object attributes.
 
+Example:
+
+```python
 def __init__(self, Employee_id=None, name=None, age=None, salary=None):
+```
 
-super()
+### `super()`
 
-super() is used to call the constructor or method of the parent class.
+`super()` is used to call the constructor or method of the parent class.
 
+Example:
+
+```python
 super().__init__(Employee_id, name, age, salary)
+```
 
-issubclass()
+### `issubclass()`
 
-The program checks whether Manager and devlopment are subclasses of Employee.
+The program checks whether `Manager` and `devlopment` are subclasses of `Employee`.
 
+```python
 issubclass(Manager, Employee)
+```
 
+```python
 issubclass(devlopment, Employee)
+```
 
-📋 Menu Options
+## 📋 Menu Options
 
 When the program starts, the following menu is displayed:
 
+```text
 Choose The Option
+
 1. Create a Person
-2. Create a Employee
+2. Create an Employee
 3. Create a Manager
 4. Show Details
 5. Exit.....
+```
 
-1️⃣ Create a Person
+### 1️⃣ Create a Person
+
+Creates a Person object with:
+
+* Name
+* Age
+
+### 2️⃣ Create an Employee
 
 Creates an Employee object with:
 
-Name
+* Employee ID
+* Name
+* Age
+* Salary
 
-Age
+### 3️⃣ Create a Manager
 
-2️⃣ Create an Employee
+Creates a Manager object with:
 
-Creates an employee with:
+* Employee ID
+* Name
+* Age
+* Salary
+* Department
 
-Employee ID
-
-Name
-
-Age
-
-Salary
-
-3️⃣ Create a Manager
-
-Creates a manager with:
-
-Employee ID
-
-Name
-
-Age
-
-Salary
-
-Department
-
-4️⃣ Show Details
+### 4️⃣ Show Details
 
 Allows the user to display:
 
-Person details
+* Person details
+* Employee details
+* Manager details
 
-Employee details
-
-Manager details
-
-5️⃣ Exit
+### 5️⃣ Exit
 
 Exits the program.
 
-▶️ How to Run
+## ▶️ How to Run
 
 Make sure Python 3 is installed on your computer.
 
-Clone the repository:
+### Clone the Repository
 
-git clone YOUR_GITHUB_REPOSITORY_URL
+```bash
+git clone https://github.com/jadejaindrajitsinh0708/object-oriented-programming.git
+```
 
+### Go to the Project Folder
 
-Go to the project folder:
+```bash
+cd object-oriented-programming
+```
 
- Employee-Management-System
+### Run the Python Program
 
-
-Run the Python program:
-
+```bash
 python main.py
+```
 
-💻 Example Output
---- Python OPP Project : Employee Manegment System
+## 💻 Example Output
+
+```text
+Python OOP Project : Employee Management System
 
 Is Manager Class Is Sub Class Of Employee Class True
 Is devlopment Class Is Sub Class Of Employee Class True
 
 Choose The Option
+
 1. Create a Person
-2. Create a Employee
+2. Create an Employee
 3. Create a Manager
 4. Show Details
 5. Exit.....
+```
 
+### Example Employee Details:
 
-Example employee details:
-
+```text
 Employee id is 101
 Employee name is Rahul
 Employee age is 25
 Employee salary is 30000
+```
 
+### Example Manager Details:
 
-Example manager details:
-
+```text
 Employee id is 102
 Employee name is Amit
 Employee age is 30
 Employee salary is 50000
 Manager Department is IT
+```
 
+## 👨‍💻 Author
 
-
-
-
-
-👨‍💻 Author
-
-INDRAJIT SINH 
-
+**INDRAJIT SINH**
