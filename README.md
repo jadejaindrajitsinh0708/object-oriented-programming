@@ -42,8 +42,7 @@ Employee-Management-System/
 └── README.md
 
  🖼️  Output Screenshot
- 
-    ![Employee Management System Output](output.png)
+ ![Employee Management System Output](output.png)
 
 
 👨‍💻 Classes
